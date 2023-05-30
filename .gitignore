@@ -1,0 +1,9 @@
+vendor
+model/conexion.php
+views/DocumentoSalud/
+views/Curriculum/
+views/imgbebida/
+views/imgplato/
+views/imgcateplato/
+views/imgmotorizado/
+bd_cevicheria.sql

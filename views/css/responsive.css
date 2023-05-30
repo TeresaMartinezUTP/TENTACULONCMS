@@ -1,0 +1,29 @@
+/* PEDIDOS MESAS */
+@media (min-width: 820px){
+    .col-pd-6{
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+}
+@media (max-width: 576px){
+    .pedidoscard{
+        display: none !important;
+    }
+    .pedidosselect{
+        display: block !important;
+    }
+    .content-wrapper{
+        padding: 1.875rem 2% !important;
+    }
+    .cantidades input[type="text"] {
+        width: 19% !important;
+    }
+}
+@media (min-width: 576px){
+    .pedidosselect{
+        display: none !important;
+    }
+    .pedidoscard{
+        display: block !important;
+    }
+}
