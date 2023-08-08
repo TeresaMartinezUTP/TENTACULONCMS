@@ -46,7 +46,6 @@ function MostrarDetalleVenta(id_venta) {
         data: "id_venta=" + id_venta,
         dataType: 'json',
     }).done(function (respuesta) {
-        console.log(respuesta);
         let producto;
         let total = 0.0;
         for (let x = 0; x < respuesta.length; x++) {

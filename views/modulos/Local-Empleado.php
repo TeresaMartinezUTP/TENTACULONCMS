@@ -55,7 +55,7 @@
                                     </option>
                                 <?php endforeach; ?>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -72,9 +72,8 @@
                                     </option>
                                 <?php endforeach; ?>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
-                        <p class="text-danger">Datos requeridos <span class="badge badge-light text-danger">(*)</span></p>
                     </div>
                     <div class=" modal-footer ">
                         <button type="reset" class="btn btn-danger btnCancelarModal" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;&nbsp;Cancelar</button>
@@ -115,7 +114,7 @@
                                     </option>
                                 <?php endforeach; ?>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
@@ -132,9 +131,8 @@
                                     </option>
                                 <?php endforeach; ?>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
-                        <p class="text-danger">Datos requeridos <span class="badge badge-light text-danger">(*)</span></p>
                     </div>
                     <div class=" modal-footer ">
                         <button type="reset" class="btn btn-danger btnCancelarModal" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;&nbsp;Cancelar</button>

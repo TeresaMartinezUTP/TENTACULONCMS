@@ -59,7 +59,6 @@ function mostrardatosventa2(id_venta) {
         dataType: 'json',
     }).done(function (respuesta) {
         $data = respuesta;
-        console.log(respuesta);
         let subtotal = 0.00;
         subtotal = $data['subtotal'];
         montopagado = $data['monto_pagado'];
@@ -637,7 +636,7 @@ function btnFinalizarVenta(id_venta) {
                 }
             })
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }
@@ -693,7 +692,6 @@ function pagarXpartes(id_ventas) {
 
 function btnSumarcantidadpagada(cantrestante, id_detalle, id_tempventaparte) {
     let cantidadpagada = parseInt($("#cantidadpagada" + id_detalle).val()) + 1;
-    console.log(cantidadpagada);
     $.ajax({
         url: "ajax/SessionAjaxCocina/actualizar_cantpagada.php",
         type: "post",
@@ -777,7 +775,6 @@ function registrarTempVentaPart(cantrestante, id_detalle, id_localplato, id_loca
             $("#cantidadPagar" + id_detalle).html('<button type="button" class="btn btn-danger m-0" style="height: 32px; margin-right: 10px!important" onclick="eliminarTempVentaParte(' + respuesta[0]['id_tempventaparte'] + ',' + cantrestante + ',' + id_detalle + ')"><i class="fas fa-trash-alt"></i></button><input type="number" class="m-0" style="width: 40px;height: 32px" value="0" min=1 disabled id=cantidadpagada' + id_detalle + '><button type="button" class="btn btn-success m-0" onclick="btnSumarcantidadpagada(' + cantrestante + ',' + id_detalle + ',' + respuesta[0]['id_tempventaparte'] + ');"> <i class="mdi mdi-plus"></i></button>');
 
             $("#hddidvparte" + id_detalle).val(respuesta[0]['id_tempventaparte']);
-            // console.log(respuesta[0]['id_tempventaparte']);
         }
     });
     setTimeout(() => {
@@ -818,7 +815,6 @@ function calcularVuelto(modalidad) {
 }
 
 $(".montocaja").on("input", function (e) {
-    console.log(this.id)
     if (this.id == 'mpcajaEdit') {
         modalidad = 'Presencial';
     } else {
@@ -834,7 +830,6 @@ $(".montocaja").change(function (e) {
     } else {
         mpagado = $("#mpcajaRecojo").val();
     }
-    console.log(mpagado);
     $.ajax({
         url: "ajax/SessionAjaxVenta/registrar_mpagadoventa.php",
         type: "post",

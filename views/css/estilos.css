@@ -53,6 +53,10 @@
 } */
 .table-moto{
     width: fit-content !important;
+    text-align: center;
+}
+.table-moto th{
+    padding-inline: 50px;
 }
 .table-moto tbody tr td{
     padding: 5px;

@@ -55,7 +55,7 @@
 <script src="views/vendors/jvectormap/jquery-jvectormap.min.js"></script>
 <script src="views/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <script src="views/vendors/owl-carousel-2/owl.carousel.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<script src="views/vendors/js/alertify.js"></script>
 <!-- End plugin js for this page -->
 <!-- inject:js -->
 <script src="views/js/off-canvas.js"></script>

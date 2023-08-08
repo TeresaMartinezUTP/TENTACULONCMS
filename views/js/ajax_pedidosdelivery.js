@@ -63,7 +63,6 @@ function mostrarPedidosDelivery() {
                     }                    
                 },
                 error: function () {
-                    console.log("ERROR");
                     toastr.error('Ocurrió un error');
                 }
             });
@@ -77,18 +76,15 @@ function registrarPedidoMotorizado(e, form, select) {
         toastr.error('Seleccione un motorizado');
     } else {
         let data = $("#" + form).serialize();
-        console.log(data)
 
         $.ajax({
             type: "POST",
             url: "ajax/SessionAjaxPedidoMotorizado/pedidomotorizado_ajax.php",
             data: data,
             success: function () {
-                console.log("ENVIADO");
                 toastr.success('Se envió el pedido');
             },
             error: function () {
-                console.log("ERROR");
                 toastr.error('Ocurrió un error');
             }
         })

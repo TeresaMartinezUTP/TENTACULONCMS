@@ -112,7 +112,7 @@ function btnEliminarlocalmesa(id_mesa) {
             })
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');
         }
     })
 }

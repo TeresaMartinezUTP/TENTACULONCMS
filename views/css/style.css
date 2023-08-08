@@ -17191,14 +17191,24 @@ a.close.disabled {
 .modal-title {
   margin-bottom: 0;
   line-height: 1.5;
+  width: 100%;
+  font-family: revert;
+  text-align: center;
+  font-weight: bold;
 }
 
 .modal-body {
   position: relative;
   flex: 1 1 auto;
   padding: 0.9375rem;
+  background: url("../images/auth/log.png");
+  background-position: center;
+  background-size: cover;
 }
-
+.modal-body > label{
+  font-weight: bolder;
+  color: black;
+}
 .modal-footer {
   display: flex;
   flex-wrap: wrap;
@@ -30842,7 +30852,7 @@ select.tt-hint {
 }
 
 .input-group-text {
-  background-color: #00d25b !important;
+  background-color: #36b39f !important;
   color: white !important;
 }
 

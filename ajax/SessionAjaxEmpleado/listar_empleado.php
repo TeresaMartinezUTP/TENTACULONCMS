@@ -57,7 +57,7 @@ class listarEmpleadoajax
             $response[$i]['documentos'] = '
             <td>
             <div class="btn-group">
-                <button type="button" class="btn btn-success m-1 btn-sm" data-toggle="modal" data-target="#mdlVisualizarCSalud" onclick="btnCarnetSanidad(' . "'" . $encry . "'" . ');"><i class="fas fa-file-medical"style="margin-top: 1px !important;"></i> CS</button></div>
+                <button type="button" class="btn btn-success m-1 btn-sm" style="background-color: #1372d0;border-color: #000;" data-toggle="modal" data-target="#mdlVisualizarCSalud" onclick="btnCarnetSanidad(' . "'" . $encry . "'" . ');"><i class="fas fa-file-medical"style="margin-top: 1px !important;"></i> CS</button></div>
             </td>';
         }
         echo json_encode($response);

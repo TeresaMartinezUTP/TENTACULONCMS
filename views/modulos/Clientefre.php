@@ -50,8 +50,8 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                                 </div>
-                                <select class="form-control" id="local_clifre" name="local_clifre" required>
-                                    <option value="">Seleccione Sede</option>
+                                <select class="form-control js-example-basic-single" id="local_clifre" name="local_clifre" required>
+                                    <option value="">Seleccione Sede:</option>
                                     <?php
                                     $tabla = 'local';
                                     $respuesta = localcontroller::ctrListarLocalesActivos($tabla);
@@ -61,7 +61,7 @@
                                         </option>
                                     <?php endforeach; ?>
                                 </select>
-                                <p class="text-danger m-auto">(*)</p>
+                                <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                             </div>
                         <?php } ?>
 
@@ -71,7 +71,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="text" class="form-control" name="nombre_clifre" placeholder="Nombre Completo" pattern="[a-zA-Z0-9!?-\sñÑáéíóúÁÉÍÓÚ]+" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
 
                         <label for="">Teléfono:</label>
@@ -80,7 +80,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="number" class="form-control" name="telefono_clifre" placeholder="Teléfono" autocomplete="off" pattern="[0-9]{9}" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Correo Electrónico:</label>
                         <div class="input-group mb-3">
@@ -88,7 +88,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="email" class="form-control" name="email_clifre" placeholder="Correo Electrónico" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Descuento:</label>
                         <div class="input-group mb-3">
@@ -96,7 +96,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="number" step="any" class="form-control" name="descuento" min="0" placeholder="Descuento" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                     </div>
                     <div class=" modal-footer">
@@ -126,7 +126,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                                 </div>
-                                <select class="form-control" id="local_clifreEdit" name="local_clifreEdit" required>
+                                <select class="form-control js-example-basic-single" id="local_clifreEdit" name="local_clifreEdit" required>
                                     <option value="">Seleccione Sede</option>
                                     <?php
                                     $tabla = 'local';
@@ -137,7 +137,7 @@
                                         </option>
                                     <?php endforeach; ?>
                                 </select>
-                                <p class="text-danger m-auto">(*)</p>
+                                <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                             </div>
                         <?php } ?>
                         <label for="">Nombre Completo:</label>
@@ -147,7 +147,7 @@
                             </div>
                             <input type="hidden" class="form-control" name="id_cliente_frecuenteEdit" id="id_cliente_frecuenteEdit" required>
                             <input type="text" class="form-control" name="nombreEdit" id="nombreEdit" placeholder="Nombre Completo" pattern="[a-zA-Z0-9!?-\sñÑáéíóúÁÉÍÓÚ]+" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
 
                         <label for="">Teléfono:</label>
@@ -156,7 +156,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="number" class="form-control" name="telefonoEdit" id="telefonoEdit" placeholder="Teléfono" autocomplete="off" pattern="[0-9]{9}" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Correo Electrónico:</label>
                         <div class="input-group mb-3">
@@ -164,7 +164,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="email" class="form-control" name="emailEdit" id="emailEdit" placeholder="Correo Electrónico" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Descuento:</label>
                         <div class="input-group mb-3">
@@ -172,7 +172,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="number" step="any" class="form-control" name="descuentoEdit" id="descuentoEdit" min="0" placeholder="Descuento" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Estado:</label>
                         <div class="input-group mb-3">

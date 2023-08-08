@@ -59,7 +59,8 @@ function btnEliminarLocalEmpleado(id_localempleado) {
                 }
             });
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
+            // alertify.error('Canceló la operación').css('background-color', 'red').css('color', 'white'); // Cambia el estilo de la notificación
         }
     });
 }

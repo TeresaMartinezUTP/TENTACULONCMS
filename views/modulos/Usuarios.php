@@ -16,7 +16,7 @@
                         <table class="table text-center table-bordered table-light table-hover" id="tbl_usuario" width="100%" cellspacing="0">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th>Id</th>
+                                    <th>N*</th>
                                     <th>Cargo</th>
                                     <th>Nombre</th>
                                     <th>Correo</th>
@@ -61,9 +61,9 @@
                                     <option value="<?php echo $value['id_empleado'] ?>"><?php echo $value['nombres'] ?> || <?php echo $value['area'] ?></option>
                                 <?php endforeach; ?>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
-                        <label for="">Correo</label>
+                        <label for="">Correo:</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
@@ -71,13 +71,13 @@
                             <input type="email" class="form-control" id="correoUsuario" placeholder="Correo del Empleado" autocomplete="off" required disabled>
                         </div>
                         <p class="text-danger" id="rpt_correo"></p>
-                        <label for="">Rol de usuario</label>
+                        <label for="">Rol de usuario:</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <select class="form-control Select2" name="rol" id="rol" required>
-                                <option value="">Seleccione rol</option>
+                                <option value="">Seleccione Rol</option>
                                 <option value="Administrador General">Administrador General</option>
                                 <option value="Administrador">Administrador</option>
                                 <option value="Mozo/Azafata">Mozo/Azafata</option>
@@ -85,7 +85,7 @@
                                 <option value="Counte en caja">Counte en caja</option>
                                 <option value="Delivery motorizado">Delivery motorizado</option>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Sede:</label>
                         <div class="input-group mb-3">
@@ -93,7 +93,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <select class="form-control Select2" name="sede" id="sede" required disabled>
-                                <option value="">selecione sede</option>
+                                <option value="">Selecione Sede</option>
                                 <?php
                                 $tabla = 'local_empleado';
                                 $respuesta = localcontroller::ctrListarLocalesEmpleado($tabla);
@@ -102,7 +102,7 @@
                                     <option value="<?php echo $value['id_localemple'] ?>"><?php echo $value['sede'] ?> || <?php echo $value['direccion'] ?></option>
                                 <?php endforeach; ?>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <p class="text-danger" id="rpt_sede"></p>
                         <label for="">Contraseña:</label>
@@ -111,7 +111,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="password" class="form-control" id="contraseña" name="contraseña" placeholder="Contraseña" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Repetir contraseña:</label>
                         <div class="input-group mb-3">
@@ -129,7 +129,7 @@
                                     }
                                 }
                             </script>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                     </div>
                     <div class=" modal-footer">
@@ -168,7 +168,7 @@
                                     <option value="<?php echo $value['id_empleado'] ?>"><?php echo $value['nombres'] ?></option>
                                 <?php endforeach; ?>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Correo</label>
                         <div class="input-group mb-3">
@@ -192,7 +192,7 @@
                                 <option value="Counte en caja">Counte en caja</option>
                                 <option value="Delivery motorizado">Delivery motorizado</option>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Sede:</label>
                         <div class="input-group mb-3">
@@ -200,7 +200,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <select class="form-control Select2" id="Udpsede" name="Udpsede" required disabled>
-                                <option value="">selecione sede</option>
+                                <option value="">Selecione Sede</option>
                                 <?php
                                 $tabla = 'local_empleado';
                                 $respuesta = localcontroller::ctrListarLocalesEmpleado($tabla);
@@ -209,7 +209,7 @@
                                     <option value="<?php echo $value['id_localemple'] ?>"><?php echo $value['sede'] ?> || <?php echo $value['direccion'] ?></option>
                                 <?php endforeach; ?>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Contraseña:</label>
                         <div class="input-group mb-3">
@@ -217,7 +217,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="password" class="form-control" id="Udpcontraseña" name="Udpcontraseña" placeholder="Contraseña" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Repetir contraseña:</label>
                         <div class="input-group mb-3">
@@ -235,7 +235,7 @@
                                     }
                                 }
                             </script>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                     </div>
                     <div class=" modal-footer">

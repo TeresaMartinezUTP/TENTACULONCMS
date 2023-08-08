@@ -55,7 +55,7 @@
                                 <option value="Mozo/Azafata">Mozo/Azafata</option>
                                 <option value="Delivery">Delivery</option>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label>Nombre del postulante:</label>
                         <div class="input-group mb-3">
@@ -63,7 +63,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="text" class="form-control" name="nombre_postular" placeholder="Nombre completo del Postulante" autocomplete="off" pattern="[a-zA-Z\sñÑáéíóúÁÉÍÓÚ]+" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label>Tipo de documento:</label>
                         <div class="input-group mb-3">
@@ -76,22 +76,22 @@
                                 <option value="Carnet de Extranjería">Carnet de Extranjería</option>
                                 <option value="Pasaporte">Pasaporte</option>
                             </select>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label>Número de documento:</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
-                            <input type="text" class="form-control" name="numdoc_postular" placeholder="Numero de documento" autocomplete="off" pattern="[0-9]+" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <input type="text" class="form-control" name="numdoc_postular" placeholder="Número de documento" autocomplete="off" pattern="[0-9]+" required>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label>Teléfono:</label>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
-                            <input type="text" class="form-control" name="telefono_postular" placeholder="Telefono" pattern="[0-9\+()]+" autocomplete="off">
+                            <input type="text" class="form-control" name="telefono_postular" placeholder="Teléfono" pattern="[0-9\+()]+" autocomplete="off">
                         </div>
                         <label>Correo:</label>
                         <div class="input-group mb-3">
@@ -100,7 +100,6 @@
                             </div>
                             <input type="email" class="form-control" name="correo_postular" placeholder="Correo de Empleado" autocomplete="off">
                         </div>
-                        <p class="text-danger">Datos requeridos <span class="badge badge-light text-danger">(*)</span></p>
                     </div>
                     <div class="modal-footer">
                         <button type="reset" class="btn btn-danger btnCancelarModal" data-dismiss="modal" onclick="btncancelEmp()"><i class="fa fa-times"></i>&nbsp;&nbsp;Cancelar</button>
@@ -211,9 +210,8 @@
                                 <a class="input-group-text btn" id="urlcv"><i class="mdi mdi-folder-download"></i></a>
                             </div>
                             <input type="file" class="form-control" name="img_curriculum_vitae" id="pdfcv" required accept="application/pdf">
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
-                        <p class="text-danger">Datos requeridos <span class="badge badge-light text-danger">(*)</span></p>
                         <img class="w-100" id="imgCV">
                         <iframe class="embed-responsive-item" id="archivo_curriculum_vitae" scrolling="no" frameborder="0" src="" width="100%" height="500"></iframe>
                     

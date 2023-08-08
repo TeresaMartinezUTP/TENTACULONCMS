@@ -15,7 +15,6 @@ function btnEliminarPostulante(id_postElm) {
                 type: "post",
                 data: "id_postElm=" + id_postElm,
             }).done(function (respuesta) {
-                console.log(respuesta);
                 if (respuesta = "ok") {
                     Swal.fire(
                         'Eliminado!',
@@ -27,7 +26,7 @@ function btnEliminarPostulante(id_postElm) {
             })
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }
@@ -155,7 +154,7 @@ function btnEliminarCVPos() {
             })
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }

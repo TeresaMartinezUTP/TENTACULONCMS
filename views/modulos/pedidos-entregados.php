@@ -63,8 +63,7 @@
                                         </div>
                                         <div class="card-body">
                                             <ul class="p-0">
-                                                <li><b>Cliente:</b></li>
-                                                <li id="cliente"></li>
+                                                <li style="display: flex;"><b>Cliente:</b><p style="padding-left: 10%;" id="cliente"></p></li>
                                                 <li><b>Detalle:</b></li>
                                                 <li>
                                                     <table class="table-moto m-auto">
@@ -81,14 +80,10 @@
                                                     <div class="dropdown-divider"></div>
                                                 </li>
                                                 <li id="descuento"></li>
-                                                <li><b>Cargo:</b></li>
-                                                <li id="cargo"></li>
-                                                <li><b>Total:</b></li>
-                                                <li id="total"></li>
-                                                <li><b>Hora de Pedido:</b></li>
-                                                <li id="hora_pedido"></li>
-                                                <li><b>Hora de Entrega:</b></li>
-                                                <li id="hora_entrega"></li>
+                                                <li style="display: flex;"><b>Cargo:</b> <p style ="padding-left: 10%;" id="cargo"></p></li>
+                                                <li style="display: flex;"><b>Total:</b> <p style ="padding-left: 10%;" id="total"></p></li>
+                                                <li style="display: flex;"><b>Hora de Pedido:</b> <p style ="padding-left: 10%;" id="hora_pedido"></p></li>
+                                                <li style="display: flex;"><b>Hora de Entrega:</b> <p style ="padding-left: 10%;" id="hora_entrega"></p></li>
                                             </ul>
                                             <span class="badge badge-success" id="estado"></span>
                                         </div>

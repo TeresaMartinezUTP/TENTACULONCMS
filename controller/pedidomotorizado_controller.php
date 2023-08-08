@@ -61,9 +61,9 @@ class pedidomotorizadocontroller{
         return $respuesta;
     }
 
-    public static function ctrListarPedidosEntregadosporId($id_local,$id_venta)
+    public static function ctrListarPedidosEntregadosporId($id_venta)
     {
-        $respuesta = pedido_motorizadomodel::mdlListarPedidosEntregadosporId($id_local,$id_venta);
+        $respuesta = pedido_motorizadomodel::mdlListarPedidosEntregadosporId($id_venta);
         return $respuesta;
     }
     

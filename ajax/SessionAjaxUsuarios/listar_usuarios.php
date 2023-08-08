@@ -13,7 +13,7 @@ class listarusuarios{
                 $encrypt = Encriptacion::encryption($response[$i]['id_usuario']);
                 $encryptEmpl = Encriptacion::encryption($response[$i]['id_empleado']);
                 if ($response[$i]['estado'] == "Activo") {
-                    $response[$i]['local'] = '<td>' . $response[$i]['sede'] . ' || ' . $response[$i]['direccion'] . '</td>';
+                    $response[$i]['local'] = '<td>' . $response[$i]['sede'] . ' / ' . $response[$i]['direccion'] . '</td>';
                     $response[$i]['estado'] = '<span class="badge badge-success p-2">' . $response[$i]['estado'] . '</span>';
                     $response[$i]['acciones'] = '
                             <td>

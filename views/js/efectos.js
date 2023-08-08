@@ -141,7 +141,7 @@ $(".btnCancelarModal").click(function () {
     if (!!document.getElementById("tbl_categoriaplato")==true) {
         deleteimgCategoria();
     }
-    alertify.error('Canceló la operación');
+    toastr.error('Canceló la operación');          
 });
 
 

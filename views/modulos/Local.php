@@ -45,7 +45,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="text" class="form-control" name="codSede" placeholder="Código de la sede" pattern="[0-9A-Za-z#()$&'°\sñÑáéíóúÁÉÍÓÚ.-]+" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
 
                         <label for="">Dirección:</label>
@@ -54,7 +54,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="text" class="form-control" name="direccionlocal" placeholder="Dirección del local" pattern="[0-9A-Za-z#()$&'°\sñÑáéíóúÁÉÍÓÚ.-]+" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                     </div>
                     <div class=" modal-footer">
@@ -85,7 +85,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="text" class="form-control" id="UdpcodSede" name="UdpcodSede" placeholder="Código de la sede" pattern="[0-9A-Za-z#()$&'°\sñÑáéíóúÁÉÍÓÚ.-]+" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
 
                         <label for="">Dirección:</label>
@@ -94,7 +94,7 @@
                                 <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-check"></i></span>
                             </div>
                             <input type="text" class="form-control" id="Udpdireccionlocal" name="Udpdireccionlocal" placeholder="Dirección del local" pattern="[0-9A-Za-z#()$&'°\sñÑáéíóúÁÉÍÓÚ.-]+" autocomplete="off" required>
-                            <p class="text-danger m-auto">(*)</p>
+                            <p class="text-danger m-auto">&nbsp;&nbsp;(*)</p>
                         </div>
                         <label for="">Status:</label>
                         <div class="input-group mb-3">

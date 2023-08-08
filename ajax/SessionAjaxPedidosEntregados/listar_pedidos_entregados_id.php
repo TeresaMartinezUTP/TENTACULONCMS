@@ -7,9 +7,9 @@ class listarPedidosEntregadosporId{
 
     public function ajaxlistarPedidosEntregadosporId(){
 
-        $id_local = $_SESSION['id_local'];
+        // $id_local = $_SESSION['id_local'];
         $id_venta = $_POST["id_venta"];
-        $respuesta = pedidomotorizadocontroller::ctrListarPedidosEntregadosporId($id_local,$id_venta);
+        $respuesta = pedidomotorizadocontroller::ctrListarPedidosEntregadosporId($id_venta);
         echo json_encode($respuesta);
         
 

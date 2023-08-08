@@ -88,7 +88,6 @@ function PintarPedidoxMotorizado(lista) {
             data: "id_venta=" + lista[i]['id_venta'],
             dataType: 'json',
         }).done(function (respuesta) {
-            console.log(respuesta)
             let producto;
             let total = 0.0;
             for (let x = 0; x < respuesta.length; x++) {
@@ -201,7 +200,6 @@ function confirmarEntrega(e, i) {
 };
 $('#selectsedeAdminM').on('change', function () {
     let $sede = $('#selectsedeAdminM').val();
-    console.log($sede);
     $.ajax({
         type: "POST",
         url: "ajax/SessionAjaxPedidoMotorizado/listar_pedidoxmotorizado.php",

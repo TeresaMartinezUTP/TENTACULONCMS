@@ -515,7 +515,6 @@ $(document).ready(function () {
             alertify.error("Debe ingresar una imagen");
         } else {
             datos = new FormData(this);
-            console.log(datos["imagen"]);
             $.ajax({
                 url: "ajax/SessionAjaxPlatos/platos_ajax.php",
                 type: "post",
@@ -680,7 +679,7 @@ function btnEditarEmpleado(id_empleado) {
         $data = respuesta;
         $('#empleadoE').val($data['id_empleado']);
         $('#nombre_empleadoE').val($data['nombres']);
-        $('#tipo_docE').val($data['tipo_doc']);
+        $('#tipo_docE').val($data['tipo_doc']).trigger('change');
         $('#numero_docE').val($data['num_doc']);
         $('#telefonoE').val($data['telefono']);
         $('#correoE').val($data['correo']);
@@ -726,7 +725,7 @@ function btnEliminarEmpleado(id_empleadoElm) {
                 }
             })
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }
@@ -742,7 +741,6 @@ function btnAusenteEmpleado(id_empleados) {
         }
     }).done(function (respuesta) {
         $data = respuesta.responseJson;
-        console.log($data);
         if ($data == "true") {
             toastr.warning('Estado del empleado cambio a "Ausente"');
             tblEmpleado.ajax.reload();
@@ -820,7 +818,7 @@ function btnReingresarEmpleado(id_empleados) {
                 }
             })
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     });
 }
@@ -998,7 +996,7 @@ function btnCambioEstado(postulante) {
                 }
             })
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }
@@ -1131,7 +1129,7 @@ function btnEliminarUsuario(id_usuElm) {
             })
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }
@@ -1204,7 +1202,7 @@ function btnEliminarlocal(id_local) {
             });
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     });
 
@@ -1265,7 +1263,7 @@ function btnEliminarPlatoLocal(id_pl) {
             })
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }
@@ -1339,7 +1337,7 @@ function btnEliminarCategoriaPlato(id_CatePlatoEli, $imagen) {
             });
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     });
 }
@@ -1417,7 +1415,7 @@ function btnEliminarPlatos(id_plato, $imagen) {
             })
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     });
 }
@@ -1492,7 +1490,7 @@ function btnEliminarBebida($id_bebida, $imagen) {
                 }
             });
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }

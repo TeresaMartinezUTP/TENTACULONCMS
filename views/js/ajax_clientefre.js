@@ -44,7 +44,7 @@ function btnEditarClientefre(id_cliente_frecuenteA) {
         $('#telefonoEdit').val($data['telefono']);
         $('#emailEdit').val($data['correo']);
         $('#descuentoEdit').val($data['descuento']);
-        $('#local_clifreEdit').val($data['id_local']);
+        $('#local_clifreEdit').val($data['id_local']).trigger('change');
         $('#estadoEdit').val($data['estado']);
 
     });
@@ -115,7 +115,7 @@ function btnEliminarClientefre(id_ClienteFrecuEli){
             })
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }

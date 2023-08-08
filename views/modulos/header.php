@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="views/vendors/flag-icon-css/css/flag-icon.min.css">
   <link rel="stylesheet" href="views/vendors/owl-carousel-2/owl.carousel.min.css">
   <link rel="stylesheet" href="views/vendors/owl-carousel-2/owl.theme.default.min.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+  <link rel="stylesheet" href="views/vendors/css/alertify.css" />
   <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
   <!-- End plugin css for this page -->

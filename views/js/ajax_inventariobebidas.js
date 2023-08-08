@@ -191,7 +191,7 @@ function btnEliminarBebidaInventario(id_bl) {
             })
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
     

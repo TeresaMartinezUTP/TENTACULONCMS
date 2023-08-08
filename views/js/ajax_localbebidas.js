@@ -117,7 +117,7 @@ function btnEliminarLocalBebida($id_localbebida){
                 }
             })
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     })
 }
@@ -184,7 +184,7 @@ function btnReingresarBebidasLocal($id_localbebida){
             })
 
         } else {
-            alertify.error('Canceló la operación');
+            toastr.error('Canceló la operación');          
         }
     });
 }

@@ -160,9 +160,9 @@ class pedido_motorizadomodel
         return $result;
     }
 
-    public static function mdlListarPedidosEntregadosporId($id_local,$id_venta)
+    public static function mdlListarPedidosEntregadosporId($id_venta)
     {   
-        $consultar = Conexion::conectar()->prepare("SELECT v.*, dv.*, pm.estado as pm_estado, cd.nombre_completo FROM detalle_venta dv INNER JOIN venta v ON dv.id_venta = v.id_venta LEFT JOIN clientes_frecuentes cd ON v.id_cliente_frecuente = cd.id_cliente_frecuente INNER JOIN pedido_motorizado pm ON v.id_venta = pm.id_venta  WHERE v.estado = 'Finalizado' AND v.id_local = $id_local AND v.id_venta = $id_venta");
+        $consultar = Conexion::conectar()->prepare("SELECT v.*, dv.*, pm.estado as pm_estado, cd.nombre_completo FROM detalle_venta dv INNER JOIN venta v ON dv.id_venta = v.id_venta LEFT JOIN clientes_frecuentes cd ON v.id_cliente_frecuente = cd.id_cliente_frecuente INNER JOIN pedido_motorizado pm ON v.id_venta = pm.id_venta  WHERE v.estado = 'Finalizado' AND v.id_venta = $id_venta");
         $consultar->execute();
         $result = $consultar->fetchAll();
 
